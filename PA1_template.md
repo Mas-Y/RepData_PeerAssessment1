@@ -20,10 +20,11 @@ library(Hmisc)
 ##     format.pval, round.POSIXt, trunc.POSIXt, units
 ```
 
+
 ## 1) Loading and preprocessing the data
 
 ```r
-setwd("D:/r/Reproducible research/Project")
+setwd("~/GitHub/RepData_PeerAssessment1")
 if(!file.exists('activity.csv')){
   unzip('./repdata-data-activity.zip')
 }
@@ -257,3 +258,4 @@ xyplot(steps~interval | weeks,data=week_comp,type="l",xlab="Interval", ylab="Num
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-19-1.png) 
+
