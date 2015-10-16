@@ -79,8 +79,9 @@ library(Hmisc)</code></pre>
 ##     format.pval, round.POSIXt, trunc.POSIXt, units</code></pre>
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>1) Loading and preprocessing the data</h2>
-<pre class="r"><code>if(!file.exists('activity.csv')){
-  unzip('D:/r/Reproducible research/Project/repdata-data-activity.zip')
+<pre class="r"><code>setwd(&quot;D:/r/Reproducible research/Project&quot;)
+if(!file.exists('activity.csv')){
+  unzip('./repdata-data-activity.zip')
 }
 
 activityData &lt;- read.csv('activity.csv',header=T,sep=&quot;,&quot;)

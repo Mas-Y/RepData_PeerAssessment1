@@ -23,8 +23,9 @@ library(Hmisc)
 ## 1) Loading and preprocessing the data
 
 ```r
+setwd("D:/r/Reproducible research/Project")
 if(!file.exists('activity.csv')){
-  unzip('D:/r/Reproducible research/Project/repdata-data-activity.zip')
+  unzip('./repdata-data-activity.zip')
 }
 
 activityData <- read.csv('activity.csv',header=T,sep=",")
